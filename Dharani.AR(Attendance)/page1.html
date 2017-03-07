@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </script>
+<script src="menu.html"></script>
 
 	<title>STIMS SUIT</title>
 	<style>
@@ -57,6 +58,15 @@ max-height: 280px;
     overflow: hidden;
     height: 300px;
 		}
+    .col-sm-6:hover
+    {
+opacity: 1;
+        transform: translateY(-50px);
+        -webkit-transform:translateY(-50px);
+        -moz-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+         -o-transform:translateY(-125px);
+    }
 		.col-sm-6 img
 		{
 
@@ -99,33 +109,33 @@ function subcard()
 <body>
 
      <div class="menu">	<br/>
+     <i class="sign out icon" style="float:right;width:50px; height: 45px;"></i> 
 		           <center>Staff Login</center>
-          <a href=""><img src="images.jpg" id="logout" style="float: right; width:50px; height: 45px;">
     </a></div>
     <div class="container">
     <div class="ui three column grid">
     
 
-              <a href="">
+              <a href="menu.html" >
               <div class="col-sm-6 col-md-4 col-lg-2">
-                         <img src="attendance.jpg" style="height: 130px" width="150px">
+                         <img src="attendance.jpg" style="height: 130px" width="150px"></a>
                          <p><center>Student Attendance</center></p>
-        <p><button type="submit" class="bttn" style="border: 0.2px; background: transparent; "><img src="icon.jpg" class="img" onclick="tend()" style="float:right;" width="75px" ></p></button>
-              </div> </a>
+        <p><button type="submit" class="bttn" onclick="tend()" style="border: 0.2px; background: transparent;"><img src="icon.jpg" class="img"  style="float:right;" width="75px" ></p></button>
+              </div> 
 
 
 
            <a href=""><div class="col-sm-6 col-md-4 col-lg-2">
-                     <img src="attendance.jpg" style="height: 130px" width="150px">
+                     <img src="attendance.jpg" style="height: 130px" width="150px"></a>
                     <p><center>View Staff Attendance</center></p>
-             </div></a>
+             </div>
 
 
                  <a href=""><div class="col-sm-6 col-md-4 col-lg-2">
-                                <img src="attendance.jpg" style="height: 130px" width="150px">
+                                <img src="attendance.jpg" style="height: 130px" width="150px"></a>
                                <p><center>Labour attendance</center></p>
             <p><button type="submit" class="btn" style="border: 0.2px; background: transparent; "><img src="icon.jpg" class="img" onclick="subcard()" style="float:right;" width="75px" ></p></button>
-                     </div></a>
+                     </div>
 
          <div id="tab" >     
   <table class="ui inverted teal table" style="width:5px; margin-left: 100px;"  height="8px" >

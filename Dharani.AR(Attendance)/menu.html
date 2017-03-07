@@ -81,7 +81,7 @@
           position: absolute;
           height: 300px;
           text-align: center;
-           color:white;
+          color:white;
           top:-1px;
           width: 100%;
 
@@ -97,11 +97,12 @@
 	#navbar
   	{
   		background-color: #4d1933;
-  		font-color:black;
+  	 color:white;
   	}
 #back
 {
-	background-color: #da8bb3;
+
+  background-color: #da8bb3;
 }
 
 #pie,#bar,#Line,#Histo
@@ -114,6 +115,7 @@
   display:none;
 
 }
+
 </style>
 </head>
 <body>
@@ -123,7 +125,6 @@
   } );
   </script>
   <script type="text/javascript">
-  
 
 	function view()
 	{
@@ -167,9 +168,7 @@ function tn()
    document.getElementById("my1").style.visibility='hidden';
 
  }
-
-
-    function card()
+function card()
           {
           document.getElementById("cont").style.display='inline';
           document.getElementById("pie").style.display="none";
@@ -179,18 +178,20 @@ function tn()
             }
 
 </script>
-<nav class="navbar navbar-inverse" id="navbar" >
 
-  <div class="container-fluid">
+
+<nav class="navbar navbar-inverse" id="navbar">
+
+  <div class="container-fluid" style="font-size: 16px;">
     <div class="navbar-header">
       <a class="navbar-brand" href="http://santechnosolutions.com/">STIMS SUIT</a>
     </div>
 
 
-    <ul class="nav navbar-nav" >
+    <ul class="nav navbar-nav">
       
-      <li class="active dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Class <span class="caret"></span></a>
-        <ul class="dropdown-menu" id="back">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" > Class <span class="caret"></span></a>
+        <ul class="dropdown-menu"  id="back">
           <li><a onclick="card()">I</a></li>
           <li><a href="#">II</a></li>
           <li><a href="#">III</a></li>
@@ -205,8 +206,8 @@ function tn()
           <li><a href="#">XII</a></li>
         </ul>
       </li>
-      <li ><a href="#">Total Students<input type="text" style="width: 30px; background-color: white"></a></li>
-      <li><a href="#">Date<input type="date" style="width:70px; height: 25px; color:white; font-weight: bold; background-color:#4d1933" id="datepicker"></a></li>
+      <li ><a> Total Students<input type="text" style="width: 70px"></a></li>
+      <li><a href="#">Date<input type="date" style="width:150px; height: 25px; color:white; font-weight: bold; background-color:#4d1933" id="datepicker"></a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Default<span class="caret"></span></a>
       <ul class="dropdown-menu" id="back">
           <li><a href="#">Absent</a></li>
@@ -233,7 +234,13 @@ function tn()
 </nav>
 
    <div class="ui container" id="cont" ng-controller="DetailController" >
-
+        <img src="photos/back.png" onclick="javascript:window.history.go(-1);" style="width: 50px;height: 50px;"></a>
+   <img src="photos/next.png" style="float: right; width: 35px; height: 35px;" onclick="javascript:window.history.go(1);" style="width: 50px;height: 50px;"></a>
+   <button class="ui teal button" style="float: right;margin-left: 360px;">Cancel</button>
+  <button class="ui teal button" style=" float:right; ">Submit</button>
+    
+      <a href> <img src="photos/x.png" style="width:60px;height:60px; margin-left:500px;"></a>
+          <input type="button"  value="OD" style="width:40px; height:40px; margin-left:20px;    background-color: #601f1f; color: white">
             <div class="ui grid">
             <div class="five column row">
             <div class="column" ng-repeat="x in details">
@@ -255,7 +262,8 @@ function tn()
                             ;border:2px solid #ffffff;padding:3px">
                       
                     <p>{{ x.Name }}</p>
-                    <p>{{ x.Department}}</p>         
+                    <p>{{ x.Department}}</p> 
+
                   </div>
 
                 </div>
@@ -267,6 +275,10 @@ function tn()
 </div>
 </div>
 </div>
+<center>
+ <button class="ui teal button" >Submit</button>
+    <button class="ui teal button" >Cancel</button>
+</center>
 </div>
 
 <div class="container">
