@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+	<style type="text/css">
+		.ui.inverted.segment {
+ background-color:green;
+ }
+ .ui.form select {
+    display: block;
+    height: auto;
+    width: 200%;
+    margin: 6px;
+    background: #FFF;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 0 transparent inset;
+    padding: .62em 1em;
+    color: rgba(0,0,0,.87);
+    -webkit-transition: color .1s ease,border-color .1s ease;
+    transition: color .1s ease,border-color .1s ease;
+}
+
+</style>
+
+</head>
+<body>
+<br>
+<div class="ui inverted segment" class="ui grid">
+	<label> HOSTEL COMPLAINT REGISTER </label>
+</div>
+
+<form class="ui form segment">
+  <div class="two fields">
+    <div class="field">
+      <label>Name</label>
+      <input placeholder=" Name" name="name" type="text">
+    </div>
+    <div class="field">
+      <label>College</label>
+      <div class="ui selection dropdown">
+        <input name="college" type="hidden">
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item" data-value="Nct">Nct</div>
+          <div class="item" data-value="Nec">Nec</div>
+		  <div class="item" data-value="Npt">Npt</div>
+		  <div class="item" data-value="Pharmacy">Pharmacy</div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+   <div class="inline fields">
+    <label> Complaining about?</label>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="frequency" checked="checked">
+        <label>Food</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="frequency">
+        <label>Water</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="frequency">
+        <label>Power</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="frequency">
+        <label>others</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="ui form">
+  <div class="three fields">
+   <div class="field">
+      <label>Complaint reasons</label>
+      <input type="text" placeholder="Resons">
+    </div>
+	
+    <div class="field">
+      <label>Facilities needed</label>
+      <input type="text" placeholder="Facilities">
+    </div>
+    <div class="field">
+      <label>Others</label>
+      <input type="text" placeholder="About others">
+    </div>
+</div>
+  
+  <div class="inline field">
+    <div class="ui checkbox">
+      <input name="terms" type="checkbox">
+      <label>I agree that above information is true</label>
+    </div>
+  </div>
+  <div class="ui primary submit button">Send</div>
+  <div class="ui  green reset button">Reset</div>
+  <div class="ui  red clear button">Clear</div>
+</form>
+
+</body>
+</html>
